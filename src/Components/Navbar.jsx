@@ -1,4 +1,4 @@
-export const Navbar = () => {
+export const Navbar = ({ setcategory }) => {
   return (
     <div>
       <nav
@@ -23,24 +23,38 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
+                <div
+                  className="nav-link"
+                  onClick={() => setcategory("technology")}
+                >
+                  Technology
+                </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Features
-                </a>
+                <div
+                  className="nav-link"
+                  onClick={() => setcategory("business")}
+                >
+                  Business
+                </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
+                <div className="nav-link" onClick={() => setcategory("health")}>
+                  Health
+                </div>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">
-                  Disabled
-                </a>
+                <div className="nav-link" onClick={() => setcategory("sports")}>
+                  Sports
+                </div>
+              </li>
+              <li className="nav-item">
+                <div
+                  className="nav-link"
+                  onClick={() => setcategory("entertainment")}
+                >
+                  Entertainment
+                </div>
               </li>
             </ul>
           </div>
