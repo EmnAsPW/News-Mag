@@ -1,3 +1,11 @@
+import { Navbar } from "./Components/Navbar";
+import { NewsBoard } from "./Components/NewsBoard";
+
 export const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <Navbar />
+      <NewsBoard />
+    </div>
+  );
 };
